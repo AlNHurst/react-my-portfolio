@@ -3,26 +3,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
+import NavBar from './components/NavBar';
+
 
 function App() {
   return (
     <>
-      <Navbar bg="primary" expand="lg">
-        <Container>
-          <Navbar.Brand as={Link} to="/aboutme">Alexandra Hurst's Portfolio</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="m-auto h5">
-              <Nav.Link as={Link} to="/aboutme"><span><i class="fas fa-info-circle"></i></span> About Me</Nav.Link>
-              <Nav.Link as={Link} to="/projects"><span><i class="fas fa-laptop-code"></i></span> Projects</Nav.Link>
-              <Nav.Link as={Link} to="/contact"><span><i class="fas fa-envelope-open-text"></i></span> Contact</Nav.Link>
-              <Nav.Link as={Link} to="/resume"><span><i class="far fa-file"></i></span> Resume</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+      <NavBar/>
       <Container>
         <Main></Main>
       </Container>

@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-green: rgba(51, 128, 51, 0.596);
+  --primary-dark: rgba(255, 255, 255, 0)
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar Styling */
+.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin: auto 12px;
+  border-bottom: 2px solid var(--primary-dark)
+}
+
+.navbar-brand {
+  color: var(--primary-white) !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus  {
+  border-bottom: 2px solid var(--primary-green)
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover  {
+  border-bottom: 2px solid var(--primary-green)
+}
+
+
+
 .contact-form {
   width: 100%;
   max-width: 330px;
