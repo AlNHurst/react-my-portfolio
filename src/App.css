@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 /* Navbar Styling */
@@ -38,7 +38,29 @@ nav ul li {
   border-bottom: 2px solid var(--primary-green)
 }
 
+/* About Me Styling */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 16px;
+  border: 1px solid var(--primary-green);
+}
+
+.about-heading {
+  color: var(--primary-green);
+  font-weight: bolder;
+}
+
+.about-paragraph {
+  color: var(--primary-green);
+}
 
 .contact-form {
   width: 100%;
@@ -47,15 +69,6 @@ nav ul li {
   margin: auto;
   height: 100%;
 } 
-
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border: 1px solid black;
-}
 
 .social-links {
   display: flex;
@@ -72,4 +85,10 @@ nav ul li {
 .footer-copyright {
   text-align: center;
   margin: 8px;
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }

@@ -1,7 +1,9 @@
-import React, { Link } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import About from './aboutMe';
 
 const NavBar = () => {
   return (
@@ -14,16 +16,16 @@ const NavBar = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="/">About Me <span className="sr-only">(current)</span></a>
+            <Link className="nav-link" to="/aboutMe">About Me <span className="sr-only">(current)</span></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Portfolio</a>
+            <Link className="nav-link" to="/projects">Portfolio</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Contact</a>
+            <Link className="nav-link" to="/contact">Contact</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Resume</a>
+            <Link className="nav-link" to="/resume">Resume</Link>
           </li>
         </ul>
       </div>
