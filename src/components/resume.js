@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Document } from 'react-pdf'
+import { Document } from 'react-pdf';
+import DownloadLink from "react-download-link";
 
 
 function Resume() {
@@ -22,16 +23,9 @@ function Resume() {
           Apollo Graphql | Express | Node.js
         </li>
       </ul>
-      <li>
-        <Link
-          to="route"
-          onClick={(event) => { event.preventDefault(); window.open("../../public/alexandra-hurst-resume.pdf"); }}>
-        Click to download
-        </Link>
-      </li>
-      <li>
-      <Document file="public/alexandra-hurst-resume.pdf" />
-      </li>
+      <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/13K9nju8Z7sKc9xMvJgZ0Z-BSMNM1jbxC/view?usp=sharing">Download Alexandra Hurst's
+        Resume</a>
+
     </Container >
   );
 }

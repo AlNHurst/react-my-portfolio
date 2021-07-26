@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import About from './aboutMe';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   return (
@@ -16,16 +19,16 @@ const NavBar = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <Link className="nav-link" to="/aboutMe">About Me <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/aboutMe"><FontAwesomeIcon icon={faInfoCircle} style={{ color: '#fff' }}/> About Me</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/projects">Portfolio</Link>
+            <Link className="nav-link" to="/portfolio"><FontAwesomeIcon icon={faLaptopCode} style={{ color: '#fff' }}/> Portfolio</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">Contact</Link>
+            <Link className="nav-link" to="/contact"><FontAwesomeIcon icon={faEnvelopeOpenText} style={{ color: '#fff' }}/> Contact</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/resume">Resume</Link>
+            <Link className="nav-link" to="/resume"><FontAwesomeIcon icon={faFile} style={{ color: '#fff' }}/> Resume</Link>
           </li>
         </ul>
       </div>

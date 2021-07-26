@@ -77,8 +77,8 @@ class Contact extends React.Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">Get In Touch!</h1>
-        <Form className="contact-form" onSubmit={this.handleSubmit}>
+        <h1 className="text-center" style={{ color: '#2b6d2bb6', paddingTop: '16px' }}>Get In Touch!</h1>
+        <Form className="contact-form" style={{ paddingBottom: '16px' }} onSubmit={this.handleSubmit}>
           <FormGroup>
             <Form.Label>Full Name: </Form.Label>
             <Form.Control
@@ -112,7 +112,8 @@ class Contact extends React.Component {
 
           <div className="d-grid gap-2">
             <Button
-              variant="danger"
+            style={{ backgroundColor: '#2b6d2bb6', color: '#fff'}}
+              variant="success"
               size="lg"
               type="submit">Send
             </Button>

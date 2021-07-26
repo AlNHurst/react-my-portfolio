@@ -2,12 +2,13 @@
 
 :root {
   --primary-white: #fff;
-  --primary-green: rgba(51, 128, 51, 0.596);
+  --primary-green: #2b6d2bb6;
   --primary-dark: rgba(255, 255, 255, 0)
 }
 
 body {
   font-family: 'Open Sans', sans-serif !important;
+  box-sizing: border-box;
 }
 
 /* Navbar Styling */
@@ -30,12 +31,14 @@ nav ul li {
   color: var(--primary-white) !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus  {
-  border-bottom: 2px solid var(--primary-green)
+.navbar-nav > li > a.active, .navbar-nav > li > a:active  {
+  border-bottom: 2px solid var(--primary-green);
+  color: var(--primary-green);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:hover  {
-  border-bottom: 2px solid var(--primary-green)
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover, .navbar-brand:hover  {
+  border-bottom: 2px solid var(--primary-green);
+  color: var(--primary-green) !important;
 }
 
 /* About Me Styling */
@@ -53,7 +56,7 @@ nav ul li {
   border: 1px solid var(--primary-green);
 }
 
-.about-heading {
+.about-heading, .portfolio-heading {
   color: var(--primary-green);
   font-weight: bolder;
 }
@@ -62,24 +65,60 @@ nav ul li {
   color: var(--primary-green);
 }
 
+/* Portfolio Styling */
+
+.portfolio-img-wrapper {
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.portfolio-img {
+  width: 500px !important;
+  height: 300px;
+  padding: 0 16px;
+  border-radius: 5px;
+  border: 2px dotted var(--primary-green);
+}
+
+.portfolio-img-box {
+ margin: 16px;
+ width: 500px !important;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  transition: all .2s ease-in-out; 
+}
+
+.portfolio-img-box:hover { 
+  transform: scale(1.05); 
+}
+
+.portfolio-description-box {
+  margin: 16px;
+ }
+
+
+
+/* Contact Styling */
 .contact-form {
   width: 100%;
   max-width: 330px;
   padding: 16px;
   margin: auto;
   height: 100%;
+  color: var(--primary-green);
+  font-weight: bold;
 } 
 
+/* Footer Styling */
 .social-links {
   display: flex;
   justify-content: center;
   margin: auto;
-  color: white;
-}
-
-.social-links i {
-  font-size: 3em;
-  padding: 16px;
 }
 
 .footer-copyright {
@@ -87,6 +126,7 @@ nav ul li {
   margin: 8px;
 }
 
+/* mobile responsive */
 @media(max-width: 468px) {
   .profile-img {
     width: 10rem;

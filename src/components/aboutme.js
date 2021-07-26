@@ -1,6 +1,5 @@
 import React from 'react';
 // import { Card, Button } from 'react-bootstrap';
-import { Container, Row, Col } from 'reactstrap';
 
 const About = () => {
   return (
