@@ -19,7 +19,7 @@ My portfolio shows recent projects I've designed and developed in the Coding Pro
 
 ## Links
 * Deployed Website
-https://alnhurst.github.io/my-portfolio/
+https://lit-journey-74897.herokuapp.com/portfolio
 
 * GitHub Repository Page
 https://github.com/AlNHurst/my-portfolio
