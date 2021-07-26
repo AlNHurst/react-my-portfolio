@@ -84,35 +84,30 @@ class Contact extends React.Component {
             <Form.Control
               type="text"
               placeholder="Alex Smith"
-              value={this.state.input.name}
-              onChange={this.handleChange} />
+              className="input" name="name" required />
           </FormGroup>
-          <div className="text-danger">{this.state.errors.name}</div>
-
+  
           <FormGroup>
             <Form.Label>Email Address:</Form.Label>
             <Form.Control
               type="text"
               placeholder="email@email.com"
-              value={this.state.input.email}
-              onChange={this.handleChange} />
+              className="input" name="email" required />
           </FormGroup>
-          <div className="text-danger">{this.state.errors.email}</div>
-
+        
           <FormGroup>
             <Form.Label>Comment:</Form.Label>
             <Form.Control
               as="textarea"
               placeholder="Enter comment"
               name="comment"
-              value={this.state.input.comment}
-              onChange={this.handleChange} />
+              className="input" required />
           </FormGroup>
-          <div className="text-danger">{this.state.errors.comment}</div>
+          
 
           <div className="d-grid gap-2">
             <Button
-            style={{ backgroundColor: '#2b6d2bb6', color: '#fff'}}
+              style={{ backgroundColor: '#2b6d2bb6', color: '#fff' }}
               variant="success"
               size="lg"
               type="submit">Send
