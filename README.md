@@ -9,7 +9,7 @@ My portfolio shows recent projects I've designed and developed in the Coding Pro
 
 ## Website Image
 
-![My Portfolio Demonstration](https://github.com/AlNHurst/react-my-portfolio/blob/main/src/images/react-portfolio.gif)
+![My Portfolio Demonstration](https://github.com/AlNHurst/react-my-portfolio/blob/main/client/src/react-portfolio.gif)
 
 ## Tech/Framework
 
